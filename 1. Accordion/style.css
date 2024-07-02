@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+.section {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: rgb(139, 84, 12);
+    text-align: center;
+}
+
+.accordion {
+    max-width: 700px;
+    margin: auto;
+}
+
+.accordion_item {
+    border: 1px solid red;
+    padding: 20px;
+}
+
+
+.accordion_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.accordion_title h3 {
+    flex: 1;
+}
+
+.accordion_title i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.accordion_content {
+    display: none;
+}
+
+.accordion_title.active+.accordion_content {
+    display: block;
+}
+
+.accordion_content p {
+    font-size: large;
+    color: brown;
+}
+
+.accordion_title.active i {
+    transform: rotate(180deg);
+}
