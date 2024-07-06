@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 25px;
+    text-align: center;
+}
+
+.qr-text {
+    padding: 10px 20px;
+    width: 400px;
+    border: 2px solid rgb(229, 152, 220);
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.generate-qr-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(225, 191, 215);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
